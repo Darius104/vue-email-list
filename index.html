@@ -12,8 +12,8 @@
 <body>
     <div id="root">
         <ul v-if="emailList.length === 10">
-            <li v-for="email in emailList">
-                {{ email }}
+            <li v-for="(email, index) in emailList">
+                {{ index }} {{ email }}
             </li>
         </ul>
 
